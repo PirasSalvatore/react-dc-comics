@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  margin-top: 1rem;
+  margin: 1rem 0;
   background-color: var(--dcc-light);
 
   .container {
@@ -55,4 +55,45 @@ header {
     }
   }
 
+}
+
+main {
+  background-color: var(--dcc-darker);
+  min-height: 10rem;
+  color: var(--dcc-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .menu {
+    background-color: var(--dcc-prymary);
+    font-size: 10px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 2rem;
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        padding: 0.5rem;
+        text-decoration: none;
+        color: var(--dcc-light);
+      }
+
+      img {
+        width: 35px;
+      }
+
+      #shopLocator {
+        width: 24px;
+      }
+    }
+  }
 }
