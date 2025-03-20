@@ -6,7 +6,8 @@
 
 :root {
   --dcc-prymary: #0282f9;
-  --dcc-light: #ffffff;
+  --dcc-lighter: #ffffff;
+  --dcc-light: #817e7e;
   --dcc-dark: #303030;
   --dcc-darker: #1c1c1c;
 }
@@ -22,7 +23,7 @@ body {
 
 header {
   margin: 1rem 0;
-  background-color: var(--dcc-light);
+  background-color: var(--dcc-lighter);
 
   .container {
     display: flex;
@@ -60,7 +61,7 @@ header {
 main {
   background-color: var(--dcc-darker);
   min-height: 10rem;
-  color: var(--dcc-light);
+  color: var(--dcc-lighter);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +85,7 @@ main {
       a {
         padding: 0.5rem;
         text-decoration: none;
-        color: var(--dcc-light);
+        color: var(--dcc-lighter);
       }
 
       img {
@@ -96,4 +97,74 @@ main {
       }
     }
   }
+}
+
+footer {
+  background-image: url(/img/footer-bg.jpg);
+
+  .footerUp {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .lmenu {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 0.5rem;
+
+      ul {
+        color: var(--dcc-lighter);
+        list-style: none;
+
+        li {
+          font-size: 10px;
+          padding: 0.25rem;
+
+          a {
+            color: var(--dcc-light);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .socialMenu {
+    background-color: var(--dcc-dark);
+    padding: 2rem 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn {
+        height: 40px;
+        background-color: transparent;
+        border: 2px solid var(--dcc-prymary);
+        padding: 0.5rem;
+        color: var(--dcc-lighter);
+        font-weight: 600;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--dcc-prymary);
+        font-weight: 700;
+
+        li>img {
+          width: 30px;
+        }
+      }
+    }
+  }
+
 }
