@@ -1,4 +1,5 @@
 import Menu from './Menu'
+import Album from './Album'
 
 export default function Main() {
     //logic
@@ -6,10 +7,7 @@ export default function Main() {
     //markup
     return (
         <main>
-            <div className="container">
-                <div className="album"> --&gt; content goes here&lt;-- </div>
-            </div>
-
+            <Album />
             <Menu />
         </main>
     )

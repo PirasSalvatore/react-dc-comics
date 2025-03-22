@@ -51,8 +51,6 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-
-                <img src="/img/dc-logo-bg.png" alt="" />
             </div>
 
             <div className="socialMenu footerDown">
