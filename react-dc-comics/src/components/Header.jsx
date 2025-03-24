@@ -1,15 +1,14 @@
 import NavBar from './NavBar'
 import Jumbotron from './Jumbotron'
 
-export default function Header() {
+export default function Header({ links }) {
 
     //logic header
-
 
     //markup
     return (
         <header>
-            <NavBar />
+            <NavBar links={links} />
             <Jumbotron />
         </header>
     )

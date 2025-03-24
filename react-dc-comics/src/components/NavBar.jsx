@@ -1,7 +1,6 @@
-import navLinks from '../assets/navLink'
 
-export default function NavBar() {
 
+export default function NavBar({ links }) {
 
     return (
         <nav className="container">
@@ -19,7 +18,7 @@ export default function NavBar() {
                 <li><a href="">NEWS</a></li>
                 <li><a href="">SHOP</a></li> */
 
-                    navLinks.map((element) =>
+                    links.map((element) =>
                         (<li><a href={element.link} className={element.active ? 'active' : ''}>{element.title} </a></li>)
                     )
 
