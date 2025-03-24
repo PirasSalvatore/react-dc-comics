@@ -6,9 +6,11 @@ export default function Card({ title, image }) {
         <div className="col-2">
             <div className="card">
                 <div className="card-figure">
-                    <img src={image} alt="" className="cardImg" />
+                    <img src={image} alt={title} className="cardImg" />
                 </div>
-                <h3 className="tilte">{title}</h3>
+                <div className="card-body">
+                    <h3 className="tilte">{title}</h3>
+                </div>
             </div>
         </div>
     )

@@ -14,7 +14,6 @@
 
 .container {
   width: 70%;
-  max-width: 1176px;
   margin: auto
 }
 
@@ -26,6 +25,13 @@
 
 .col-2 {
   width: calc((100%/12)*2);
+  flex-basis: auto;
+  padding: 1rem;
+}
+
+.col-12 {
+  width: 100%;
+  flex-basis: auto;
   padding: 1rem;
 }
 
@@ -61,8 +67,9 @@ header {
   a {
     text-decoration: none;
     color: var(--dcc-darker);
-    font-weight: 400;
-    font-size: 10px;
+    font-weight: 800;
+    font-size: 12px;
+    font-family: "Open", Sans;
 
     &.active {
       border-bottom: 2px solid var(--dcc-prymary);
@@ -81,11 +88,26 @@ header {
 
 main {
   background-color: var(--dcc-darker);
-  min-height: 10rem;
   color: var(--dcc-lighter);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .btn-category-container {
+
+    .btn-category {
+      position: absolute;
+      top: 315px;
+      left: 200px;
+      background-color: var(--dcc-prymary);
+      padding: 0.5rem 1rem;
+      color: var(--dcc-lighter);
+      font-weight: 600;
+      border: none;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
 
   .album {
     padding: 1rem;
@@ -95,21 +117,32 @@ main {
 
       .card {
         width: 100%;
-        height: 200px;
 
         .card-figure {
-          width: 100%;
-          height: 100%;
+          overflow: hidden;
+          height: 150px;
         }
 
         .cardImg {
-          width: 100%;
+          width: 155%;
+          position: relative;
+          left: -37px;
         }
       }
     }
   }
 
+  .btn-load-container {
+    text-align: center;
 
+    .btnLoad {
+      background-color: var(--dcc-prymary);
+      padding: 0.5rem 2rem;
+      color: var(--dcc-lighter);
+      font-weight: 600;
+      border: none;
+    }
+  }
 
   .menu {
     background-color: var(--dcc-prymary);
@@ -149,7 +182,7 @@ footer {
   background-image: url(/img/dc-logo-bg.png), url(/img/footer-bg.jpg);
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: 700px -30px, center;
+  background-position: 900px -30px, center;
 
   .footerUp {
     display: flex;

@@ -3,7 +3,7 @@ export default function Menu() {
 
     //markup
     return (
-        <div className="menu">
+        <div className="menu col-12">
             <div className="container">
                 <ul>
                     <li>

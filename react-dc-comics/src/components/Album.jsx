@@ -4,8 +4,8 @@ import Card from './Card'
 export default function Album() {
     //logic
 
-    const cards = comics.map((element) => {
-        return (<Card title={element.series} image={element.thumb} />)
+    const cards = comics.map((element, index) => {
+        return (<Card key={index} title={element.series} image={element.thumb} />)
     })
 
     console.log(cards);
@@ -13,7 +13,11 @@ export default function Album() {
 
     return (
         <>
-            <div className="album">
+            <div className='btn-category-container col-12'>
+                <button type="button" className='btn-category'>CURRENT SERIES</button>
+            </div>
+
+            <div className="album col-12">
                 <div className="container">
                     <div className="row">
                         {cards}
@@ -21,7 +25,9 @@ export default function Album() {
                 </div>
             </div>
 
-            <button type="button" className='btnLoad'>LOAD MORE</button>
+            <div className='btn-load-container col-12'>
+                <button type="button" className='btnLoad'>LOAD MORE</button>
+            </div>
         </>
     )
 }
