@@ -12,12 +12,16 @@ export default function Album() {
 
 
     return (
-        <div className="album">
-            <div className="container">
-                <div className="row">
-                    {cards}
+        <>
+            <div className="album">
+                <div className="container">
+                    <div className="row">
+                        {cards}
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <button type="button" className='btnLoad'>LOAD MORE</button>
+        </>
     )
 }
